@@ -41,9 +41,7 @@ def format_score(value):
 
 @register.filter
 def format_num_comments(value):
-    if value is 0:
-        return 'оставьте первый комментарий'
-    elif 0 < value <= 50:
+    if 0 < value <= 50:
         return value
     else:
         return '50+'
